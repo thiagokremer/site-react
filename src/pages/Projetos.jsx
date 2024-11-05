@@ -1,4 +1,4 @@
-import './Home.css'
+import styles from './Projetos.module.css'
 import Projeto from '../components/Projeto'
 
 function Projetos() {
@@ -13,6 +13,13 @@ function Projetos() {
                 descricao='Tentando fazer a atividade em aula'
                 tecnologias='Git'
                 fase='perdido'
+            />
+
+            <Projeto
+                nome='Indo para algum ligar'
+                descricao='Tentando ainda fazer alguma coisa da atividade'
+                tecnologias='Herdeiro'
+                fase='procurando'
             />
 
         </>

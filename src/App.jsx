@@ -1,21 +1,24 @@
-import './App.css'
-import Header from './pages/Header'
+import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
+import styles from './App.module.css'
 import Home from './pages/Home'
-import Footer from './pages/Footer'
 import Sobre from './pages/Sobre'
 import Projetos from './pages/Projetos'
+import Header from './components/Header'
+import Footer from './components/Footer'
+
 
 function App() {
   return (
     <>
+      <BrowserRouter>
         <Header/>
-        <Projetos/>
-        <Home/>
-        <Sobre
-          texto="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, vitae nesciunt. Eius ad commodi perspiciatis, maiores placeat neque pariatur in quibusdam odit hic doloremque explicabo molestias officia modi dolore autem!"
-          endereco="https://placehold.co/200"
-        />
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/sobre' element={<Sobre/>}/>
+            <Route path='/projetos' element={<Projetos/>}/>
+          </Routes>
         <Footer/>
+      </BrowserRouter>
     </>    
   )
 }

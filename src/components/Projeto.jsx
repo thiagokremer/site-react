@@ -1,9 +1,10 @@
+import styles from './Projeto.module.css'
 
 function Projeto({nome, descricao, tecnologias, fase}) {
 
     return(
         <>
-            <h3>Nome: {nome}</h3>
+            <h3 className={styles.projetos}>Nome: {nome}</h3>
             <p>Descrição: {descricao}</p>
             <p>Tecnologias aplicadas: {tecnologias}</p>
             <p>Fase: {fase}</p>

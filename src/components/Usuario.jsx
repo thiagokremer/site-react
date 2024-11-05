@@ -1,3 +1,4 @@
+import styles from './Usuario.module.css'
 
 function Usuario({nome, idade, peso, altura, profissao, habilidades}) {
 
@@ -5,12 +6,12 @@ function Usuario({nome, idade, peso, altura, profissao, habilidades}) {
 
     return(
         <>
-            <h3>Nome: {nome}</h3>
-            <p>Idade: {idade}</p>
-            <p>Peso: {peso} - altura: {altura}</p>
-            <p>IMC: {imc}</p>
-            <p>profissão: {profissao}</p>
-            <p>Habilidades: {habilidades}</p>
+            <h3 className={styles.nome}>Nome: {nome}</h3>
+            <p className={styles.idade}>Idade: {idade}</p>
+            <p className={styles.peso_altura}>Peso: {peso} - altura: {altura}</p>
+            <p className={styles.peso_altura} >IMC: {imc}</p>
+            <p className={styles.profissao}>profissão: {profissao}</p>
+            <p className={styles.habilidades}>Habilidades: {habilidades}</p>
             <br></br>
         </>
     )

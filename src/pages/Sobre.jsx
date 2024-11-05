@@ -1,3 +1,4 @@
+import styles from './Sobre.module.css'
 
 function Sobre({texto, endereco}) {
 
